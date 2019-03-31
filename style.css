@@ -1,7 +1,7 @@
 body {
   background-image: url(img/back.jpg);
-  margin-left: 600px;
-  background-size: 100%;
+  margin-left: 500px;
+  background-size: 120%;
 }
 
 .about {
@@ -14,7 +14,7 @@ font-weight: lighter;
 
 .img-main {
 float:left;
-width: 230px;
+width: 215px;
 height: 300px;
 margin: 20px 30px 20px 30px;
 clear: both;
@@ -72,7 +72,7 @@ select {
 }
 #send_button {
   position: absolute;
-  right: 750px;
+  right: 300px;
   margin-bottom: 50px;
 }
 
