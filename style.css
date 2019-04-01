@@ -1,6 +1,6 @@
 body {
   background-image: url(img/back.jpg);
-  margin-left: 500px;
+  margin-left: 35%;
   background-size: 120%;
 }
 
@@ -72,7 +72,7 @@ select {
 }
 #send_button {
   position: absolute;
-  right: 300px;
+  right: 20%;
   margin-bottom: 50px;
 }
 
