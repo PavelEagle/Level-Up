@@ -8,13 +8,13 @@
 </head>
 <body>
 <header class="title"> 
-  <p>Вакансия: Junior Front-End Developer</p>
+  <h1>Вакансия: Junior Front-End Developer</h1>
 </header>
 <img src="img/main.jpg" class="img-main" alt="My photo">
 <section class="about">
-  <p>Имя: Павел<br>
-    <a href="https://github.com/PavelEagle" target="_blank">Ссылка на github</a><br>
-    Опыт работы: будет</p>
+  <span>Имя: Павел</span><br>
+  <a href="https://github.com/PavelEagle" target="_blank">Ссылка на github</a><br>
+  <span>Опыт работы: будет</span>
 </section>
 <section class="clear"></section>
 <section class="main-text"><p>
@@ -48,17 +48,18 @@
 <section class="main-text">
   <p>Коммуникабельность: 
     <select>
-      <option>Уровень Бог</option>
-      <option>Могу поддержать любой разговор</option>
-      <option>Лучший собеседник после пары бокалов пива</option>
-      <option>Общаюсь только по праздникам</option>
-      <option>Социофоб</option>
+      <option value="" selected disabled hidden>Choosen here</option>
+      <option value="Communication1">Уровень Бог</option>
+      <option value="Communication2">Могу поддержать любой разговор</option>
+      <option value="Communication3">Лучший собеседник после пары бокалов пива</option>
+      <option value="Communication4">Общаюсь только по праздникам</option>
+      <option value="Communication5">Социофоб</option>
     </select><br>
   </p>
 </section>
 <section class="main-text">
   <p>Желаемая з/п: 
-  <input placeholder="money" name="money"><br></p>
+  <input type="number" placeholder="money" name="money"><br></p>
 </section>
 <section class="main-text">
   <p>Подходит по критериям:</p>
@@ -73,30 +74,34 @@
 </section>
 <section class="main-text">
   <table border="1" width="70%" cellpadding="4">
-    <tr>
-      <th>№</th>
-      <th>Срок обучения</th>
-      <th>Учебное заведение</th>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Срок обучения</th>
+        <th>Учебное заведение</th>
+       </tr>
+    </thead>  
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>11 мучительных лет</td>
+        <td>Школа</td> 
       </tr>
-    <tr>
-      <td>1</td>
-      <td>11 мучительных лет</td>
-      <td>Школа</td> 
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>4 года</td>
-      <td>Самарский Государственный Аэрокосмический Университет</td> 
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>2 года</td>
-      <td>ИТМО</td> 
-    </tr>
+      <tr>
+        <td>2</td>
+        <td>4 года</td>
+        <td>Самарский Государственный Аэрокосмический Университет</td> 
+      </tr>
+      <tr>
+       <td>3</td>
+        <td>2 года</td>
+        <td>ИТМО</td> 
+      </tr>
+    </tbody>  
  </table>
 </section>
 <section>
-  <button id="send_button">Отправить заявку</button>
+  <button type="submit" id="send_button" value="SendForm">Отправить заявку</button>
 </section>
 </body>
 </html>
