@@ -1,8 +1,12 @@
 body {
   background-image: url(img/back2.jpg);
-  margin-left: 35%;
   background-size: 100%;
   background-attachment: fixed;
+}
+
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about {
@@ -10,16 +14,20 @@ body {
   margin: 60px 30px 20px 30px;
   font-family: 'Lobster', cursive;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .github-link {
   text-decoration: none;
   color: #008B8B;
+  outline: none;
 }
 
 .github-link:hover {
-  font-weight: bold;
+  color: rgb(3, 184, 184);
+  cursor: pointer;
 }
+
 
 div img {
   float:left;
@@ -38,6 +46,7 @@ div img {
   -o-transition: scale(1.05);
   -ms-transition: scale(1.05);
   transform: scale(1.05); 
+  cursor: pointer;
 }
 
 
@@ -64,10 +73,14 @@ input[type=date] {
   background-color: #F5F5F5;
   border: 1;
   border-radius: 5px;
-
 }
 
 input[type=date]:hover {
+  border-color: #48D1CC;
+  cursor: pointer;
+}
+
+input[type=date]:focus {
   border-color: #48D1CC;
 }
 
@@ -81,9 +94,16 @@ button{
   font-family: 'Lobster', cursive;
   font-size: 15px; 
   border-radius: 5px;
+  outline: none;
 }
 
 button:hover {
+  background: linear-gradient(to top, #C0C0C0, #F2F3F4);
+  border-color: #48D1CC;
+  cursor: pointer;
+}
+
+button:focus {
   background: linear-gradient(to top, #C0C0C0, #F2F3F4);
   border-color: #48D1CC;
 }
@@ -93,9 +113,15 @@ input {
   background-color: #F5F5F5;
   font-size: 17px;
   border-radius: 5px;
+  outline: none;
 }
 
 input:hover {
+  border-color: #48D1CC;
+  cursor: pointer;
+}
+
+input:focus {
   border-color: #48D1CC;
 }
 
@@ -104,9 +130,15 @@ select {
   background-color: #F5F5F5;
   font-size: 17px;
   border-radius: 5px;
+  outline: none;
 }
 
 select:hover {
+  border-color: #48D1CC;
+  cursor: pointer;
+}
+
+select:focus {
   border-color: #48D1CC;
 }
 
