@@ -2,6 +2,9 @@ body {
   background-image: url(img/back2.jpg);
   background-size: 100%;
   background-attachment: fixed;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .content-center {
@@ -10,8 +13,10 @@ body {
 }
 
 .about {
+  position: absolute;
   float:left;
-  margin: 60px 30px 20px 30px;
+  margin-left: 50%;
+  margin-top: 10%;
   font-family: 'Lobster', cursive;
   font-size: 25px;
   font-weight: bold;
@@ -37,16 +42,30 @@ div img {
 }
 
 .img-main {
-  transition: 1s ease-out;
+  position: absolute;
+  margin-left: 3%;
+  width: 40%;
+  height: 330%;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-.img-main:hover{
-  -webkit-transition: scale(1.05);
-  -moz-transition: scale(1.05);
-  -o-transition: scale(1.05);
-  -ms-transition: scale(1.05);
-  transform: scale(1.05); 
-  cursor: pointer;
+@keyframes pulse {
+  from {
+    width: 40%;
+    height: 330%;
+  }
+
+  to {
+    width: 40%;
+    height: 330%;
+  }
+
+  50% {
+    width: 42%;
+    height: 340%;
+  }
 }
 
 
@@ -62,6 +81,11 @@ h1 {
 
 .clear {
   clear: both;
+}
+
+.main-content {
+  position: absolute;
+  margin-top: 55%;
 }
 
 input[type=date] {
@@ -95,6 +119,8 @@ button{
   font-size: 15px; 
   border-radius: 5px;
   outline: none;
+  padding: 2px;
+  box-shadow: 3px 2px 5px black;
 }
 
 button:hover {
@@ -106,6 +132,11 @@ button:hover {
 button:focus {
   background: linear-gradient(to top, #C0C0C0, #F2F3F4);
   border-color: #48D1CC;
+}
+
+.button-add-advantages{
+  position: relative;
+  bottom: 2px;
 }
 
 input {
@@ -144,9 +175,21 @@ select:focus {
 
 #send_button {
   position: absolute;
-  right: 30%;
+  right: 5%;
   margin-bottom: 50px;
 }
 
+
+.learning-info-school:hover {
+  background-color: #66CDAA;
+}
+
+.learning-info-ssau:hover {
+  background-color: #F0E68C;
+}
+
+.learning-info-itmo:hover {
+  background-color: #F4A460;
+}
 
 
