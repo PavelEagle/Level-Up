@@ -19,7 +19,6 @@ body {
   margin-top: 10%;
   font-family: 'Lobster', cursive;
   font-size: 25px;
-  font-weight: bold;
 }
 
 .github-link {
@@ -43,7 +42,7 @@ div img {
 
 .img-main {
   position: absolute;
-  margin-left: 3%;
+  margin-left: 2%;
   width: 40%;
   height: 330%;
   animation-name: pulse;
@@ -85,7 +84,7 @@ h1 {
 
 .main-content {
   position: absolute;
-  margin-top: 55%;
+  margin-top: 57%;
 }
 
 input[type=date] {
